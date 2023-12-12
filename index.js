@@ -1,4 +1,4 @@
-// distanceFromHqInBlocks: Returns the number of blocks from Scuber's headquarters to the pickup location.
+
 function distanceFromHqInBlocks(someValue) {
     if (someValue >= 42) {
         return someValue - 42;
@@ -7,19 +7,19 @@ function distanceFromHqInBlocks(someValue) {
     }
 }
 
-// distanceFromHqInFeet: Returns the number of feet from Scuber's headquarters to the pickup location.
+
 function distanceFromHqInFeet(someValue) {
     const blocks = distanceFromHqInBlocks(someValue);
     return blocks * 264; // 1 block is 264 feet
 }
 
-// distanceTravelledInFeet: Calculates the number of feet a passenger travels given a starting block and an ending block
+
 function distanceTravelledInFeet(start, destination) {
     const blocks = Math.abs(destination - start);
     return blocks * 264; // 1 block is 264 feet
 }
 
-// calculatesFarePrice: Given the same starting and ending block, return the fare for the customer.
+
 function calculatesFarePrice(start, destination) {
     const distance = distanceTravelledInFeet(start, destination);
 
